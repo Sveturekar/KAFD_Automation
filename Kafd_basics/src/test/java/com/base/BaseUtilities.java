@@ -58,7 +58,7 @@ public class BaseUtilities {
 		BrowserName = properties.getProperty("Browser").trim();
 		System.out.println(BrowserName); 
 		if (BrowserName.equalsIgnoreCase("chrome")) {
-			options = new ChromeOptions();
+			options = new ChromeOptions(); 
 			options.addArguments("--remote-allow-origins=*");
 			WebDriverManager.chromedriver().driverVersion("129.0.6668.70").setup();
 			driver = new ChromeDriver(options);
