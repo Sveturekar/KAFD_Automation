@@ -54,7 +54,7 @@ public class BaseUtilities {
 	
 	public void launchBrowser() throws IOException, InterruptedException {
 
-		properties();
+		properties(); 
 		BrowserName = properties.getProperty("Browser").trim();
 		System.out.println(BrowserName); 
 		if (BrowserName.equalsIgnoreCase("chrome")) {
