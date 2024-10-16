@@ -56,7 +56,7 @@ public class BaseUtilities {
 
 		properties();
 		BrowserName = properties.getProperty("Browser").trim();
-		System.out.println(BrowserName);
+		System.out.println(BrowserName); 
 		if (BrowserName.equalsIgnoreCase("chrome")) {
 			options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
