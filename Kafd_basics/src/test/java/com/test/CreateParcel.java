@@ -63,9 +63,9 @@ public class CreateParcel extends BaseUtilities {
 
 	}
 	
-	@AfterClass
+	/*@AfterClass
 	private void quitDriver() {
 		driver.quit();
-	}
+	}*/
 
 }

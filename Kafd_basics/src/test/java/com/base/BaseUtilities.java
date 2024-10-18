@@ -8,11 +8,9 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -122,7 +120,7 @@ public class BaseUtilities {
 
 		properties = new Properties();
 		fileInputStream = new FileInputStream(
-				"C:\\Users\\KiranRaj\\eclipse-workspace\\Kafd_basics\\src\\test\\resources\\configuration\\config.properties");
+				"C:\\Users\\SaiprasadVeturekar\\git\\KAFD_Automation\\Kafd_basics\\src\\test\\resources\\configuration\\config.properties");
 		properties.load(fileInputStream);
 		System.out.println(properties);
 
@@ -154,6 +152,12 @@ public class BaseUtilities {
 	public void webWaitVisibility(WebElement ele) {
 		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
 		wait.until(ExpectedConditions.visibilityOf(ele));
+	}
+	
+	public void clickElementJavascript(WebElement Dashboard_button)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", Dashboard_button);
 	}
 
 	public void extentReport() {

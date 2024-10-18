@@ -12,6 +12,8 @@
      <class name="com.test.Login"/>
       <class name="com.test.CreateParcel"/>
       <class name="com.test.ManageKafdDocuments"/>
+      <class name="com.test.Add_Tenancy"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

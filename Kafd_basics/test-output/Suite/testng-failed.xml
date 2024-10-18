@@ -3,19 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.test.Login">
-        <methods>
-          <include name="signInKafd"/>
-        </methods>
-      </class> <!-- com.test.Login -->
       <class name="com.test.CreateParcel">
         <methods>
+          <include name="loginIntialization"/>
           <include name="createParcel"/>
         </methods>
       </class> <!-- com.test.CreateParcel -->
       <class name="com.test.ManageKafdDocuments">
         <methods>
           <include name="uploadKafdDocuments"/>
+          <include name="loginIntialization"/>
         </methods>
       </class> <!-- com.test.ManageKafdDocuments -->
     </classes>

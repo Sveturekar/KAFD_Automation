@@ -42,9 +42,9 @@ public class ManageKafdDocuments extends BaseUtilities {
 	
 	
 	
-	@AfterClass
+	/*@AfterClass
 	private void quitDriver() {
 		driver.quit();
-	}
+	}*/
 
 }
