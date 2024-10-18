@@ -48,7 +48,7 @@ public class Add_tenancy_page extends BaseUtilities
 
 	int size = driver.findElements(By.xpath("//p[@class='title-text-overflow ng-tns-c246-0']")).size();
 	System.out.println(size);
-
+ 
 	for (int i = 0; i < size; i++) 
 	{
 	String text = driver.findElements(By.xpath("//p[@class='title-text-overflow ng-tns-c246-0']")).get(i).getText();
